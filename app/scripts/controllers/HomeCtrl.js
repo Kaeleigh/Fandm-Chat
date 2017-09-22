@@ -1,9 +1,10 @@
 (function() {
-    function HomeCtrl() {
-
+    function HomeCtrl(Room) {
+      rooms = Room.all;
+      this.rooms = rooms;
     }
 
     angular
         .module('fandmChat')
-        .controller('HomeCtrl', [HomeCtrl]);
+        .controller('HomeCtrl', ['Room',  HomeCtrl]);
 })();

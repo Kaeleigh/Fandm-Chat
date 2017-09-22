@@ -17,4 +17,5 @@
      angular
          .module('fandmChat', ['ui.router', 'firebase'])
          .config(config);
+
  })();
