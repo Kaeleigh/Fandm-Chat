@@ -1,3 +1,23 @@
-<h1>Home Page</h1>
+<main class="home-site">
+  <nav class="nav">
 
-<div ng-repeat="room in home.rooms">{{ room.$value }} </div>
+  </nav>
+
+  <div class="side-bar col-sm-4">
+    <h1 class="title">Fandm Chat</h1>
+    <ul class="view-list">
+      <li class="list-item" ng-repeat="room in home.rooms">
+        {{ room.$value }}
+      </li>      <!--room is, home is the controller, rooms is array-->
+      <li ng-controller="ModalCtrl as modals">
+        <button type="button" class="btn btn-default" ng-click="modals.open()">New Room</button>
+      </li>
+    </ul>
+  </div>
+
+
+    <div class="chat-window col-sm-6">
+
+    </div>
+
+</main>
