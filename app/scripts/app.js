@@ -15,7 +15,7 @@
      }
 
      angular
-         .module('fandmChat', ['ui.router', 'firebase'])
+         .module('fandmChat', ['ui.bootstrap', 'ui.router', 'firebase'])
          .config(config);
 
  })();

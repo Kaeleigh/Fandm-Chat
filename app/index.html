@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <title>Bloc Base Project</title>
     <link rel="stylesheet" href="/styles/main.css">
+    <link href="//netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet">
 </head>
 <body>
   <ui-view></ui-view>
@@ -19,7 +20,8 @@
 
 <!--AngularFire-->
   <script src="https://cdn.firebase.com/libs/angularfire/2.3.0/angularfire.min.js"></script>
-  <script>
+
+    <script>
     // Initialize Firebase
     var config = {
       apiKey: "AIzaSyDjvSW8TALDbsoC1__F14LFkdOmErm7TTs",
@@ -32,9 +34,15 @@
     firebase.initializeApp(config);
   </script>
 
+<!--Angular UI-Bootstrap-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-bootstrap/2.5.0/ui-bootstrap-tpls.min.js"></script>
+
   <!--Application files -->
   <script src="/scripts/app.js"></script>
   <script src="/scripts/controllers/HomeCtrl.js"></script>
+  <script src="/scripts/controllers/ModalCtrl.js"></script>
+  <script src="/scripts/controllers/ModalInstanceCtrl.js"></script>
   <script src="/scripts/services/Room.js"></script>
+
 </body>
 </html>
