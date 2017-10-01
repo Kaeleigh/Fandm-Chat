@@ -2,6 +2,10 @@ html, body, main {
   height: 100%;
 }
 
+.container-fluid {
+  height: 100%;
+}
+
 .side-bar {
   height: 100%;
   background-color: #d0d0d0;
@@ -25,4 +29,19 @@ html, body, main {
 
 .chat-window {
   height: 100%;
+}
+
+.chat-window h1 {
+  color: #272727;
+}
+
+
+.message-username {
+  font-weight: normal;
+}
+
+.message-timestamp {
+  font-weight: lighter;
+  font-style: oblique;
+  float:right;
 }

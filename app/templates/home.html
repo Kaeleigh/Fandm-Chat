@@ -17,7 +17,13 @@
 
 
     <div class="chat-window col-sm-6">
-
+        <h1>{{ home.currentRoomName }}</h1>
+        <div class="container message-list">
+          <div class="message-item" ng-repeat="message in home.roomMessages">
+            <p class="message-username">{{ message.username }} <span class="message-timestamp">{{ message.sentAt }}</span></p>
+            <p class="message-content">{{ message.content }}</p>
+          </div>
+        </div>
     </div>
 
 </main>

@@ -5,10 +5,11 @@
                 controller: "ModalInstanceCtrl as modalInstance",
                 templateUrl: "/templates/modal.html"
               })
+
           modalInstance.result.then(function(name) {
             console.log(name);
             Room.add(name);    // adding chat room
-            
+
           }, function () {
               console.log('modal-component dismissed');
             });
