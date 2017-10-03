@@ -16,12 +16,13 @@
   </div>
 
 
-    <div class="chat-window col-sm-6">
+    <div class="chat-window col-sm-8">
         <h1>{{ home.currentRoomName }}</h1>
         <div class="container message-list">
           <div class="message-item" ng-repeat="message in home.messages">
-            <p class="message-username">{{ message.username }} <span class="message-timestamp">{{ message.sentAt }}</span></p>
-            <p class="message-content">{{ message.content }}</p>
+            <p class="message-username">Username: {{ message.username }}<span class="message-sentAt">Time Sent: {{ message.sentAt }}</span></p>
+
+            <p class="message-content">Message: {{ message.content }}</p>
           </div>
         </div>
     </div>

@@ -43,8 +43,9 @@ html, body, main {
   font-weight: normal;
 }
 
-.message-timestamp {
-  font-weight: lighter;
-  font-style: normal;
-  float:right;
+.message-sentAt {
+  font-weight: normal;
+  font-style: italic;
+  padding-left: 20px;
+
 }
