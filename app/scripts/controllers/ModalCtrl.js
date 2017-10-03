@@ -1,5 +1,5 @@
 (function() {
-    function ModalCtrl($uibModal, Room) {
+    function ModalCtrl($uibModal) {
           this.open = function() {      // open method for $uibModal
               var modalInstance = $uibModal.open({        // open method attached to $ubiModal and stored in variable modalInstance
                 controller: "ModalInstanceCtrl as modalInstance",
@@ -19,5 +19,5 @@
 
     angular
         .module('fandmChat')
-        .controller('ModalCtrl', ['$uibModal', 'Room', ModalCtrl]);
+        .controller('ModalCtrl', ['$uibModal', ModalCtrl]);
 })();

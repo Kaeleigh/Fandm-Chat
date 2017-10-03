@@ -5,7 +5,6 @@
         }
 
         this.createRoom = function() {      // option to create chat room
-          console.log(this.name);
           $uibModalInstance.close(this.name);
         }
     }

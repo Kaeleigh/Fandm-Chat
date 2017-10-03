@@ -4,9 +4,9 @@
 
       this.openRoom = function(room) {      //set value to and filters messages of current room
         var currentRoom = room;
+        this.currentRoomName = currentRoom.$value;
+        this.messages = Message.getByRoomId(currentRoom.$id);
 
-        this.currentRoomName = currentRoom.$value
-        this.roomMessages = Message.getByRoomId(currentRoom.$id);
       }
     }
 

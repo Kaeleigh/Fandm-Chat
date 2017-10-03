@@ -7,8 +7,8 @@
     <h1 class="title">Fandm Chat</h1>
     <ul class="view-list">
       <li class="list-item" ng-repeat="room in home.rooms">
-        {{ room.$value }}
-      </li>      <!--room is, home is the controller, rooms is array-->
+        <a class="room-name" ng-click="home.openRoom(room)">{{ room.$value }}</a>
+      </li>      <!--room is the variable, home is the controller, rooms is array-->
       <li ng-controller="ModalCtrl as modals">
         <button type="button" class="btn btn-default" ng-click="modals.open()">New Room</button>
       </li>
@@ -19,7 +19,7 @@
     <div class="chat-window col-sm-6">
         <h1>{{ home.currentRoomName }}</h1>
         <div class="container message-list">
-          <div class="message-item" ng-repeat="message in home.roomMessages">
+          <div class="message-item" ng-repeat="message in home.messages">
             <p class="message-username">{{ message.username }} <span class="message-timestamp">{{ message.sentAt }}</span></p>
             <p class="message-content">{{ message.content }}</p>
           </div>

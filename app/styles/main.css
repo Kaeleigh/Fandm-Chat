@@ -2,9 +2,7 @@ html, body, main {
   height: 100%;
 }
 
-.container-fluid {
-  height: 100%;
-}
+
 
 .side-bar {
   height: 100%;
@@ -27,6 +25,11 @@ html, body, main {
   margin-bottom: 1rem;
 }
 
+.side-bar a:hover {
+  cursor: pointer;
+  color: #272727;
+}
+
 .chat-window {
   height: 100%;
 }
@@ -42,6 +45,6 @@ html, body, main {
 
 .message-timestamp {
   font-weight: lighter;
-  font-style: oblique;
+  font-style: normal;
   float:right;
 }
