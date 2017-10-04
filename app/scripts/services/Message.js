@@ -12,6 +12,10 @@
     //  console.log(results);
     //  return results;
     };
+
+    Message.addMessage = function(message) {
+          messages.$add(message); // adds messages from site to firebase
+      };
     return Message;
   }
 

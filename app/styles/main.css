@@ -49,3 +49,13 @@ html, body, main {
   padding-left: 20px;
   float: right;
 }
+
+.form-control {
+  display: inline;
+  width: 100px;
+}
+
+.message-send {
+  position: fixed;
+  bottom: 10px;
+}
