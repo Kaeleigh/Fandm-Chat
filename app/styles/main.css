@@ -47,5 +47,5 @@ html, body, main {
   font-weight: normal;
   font-style: italic;
   padding-left: 20px;
-
+  float: right;
 }

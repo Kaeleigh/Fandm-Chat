@@ -8,9 +8,13 @@
           $uibModalInstance.close(this.name);
         };
 
-        this.createUsername = function() {        // saves username user types in 
-          $cookies.putObject('fandmChatCurrentUser', this.username)
-          $uibModalInstance.close();
+        this.createUsername = function() {        // saves username user types in
+
+          if (this.username) {
+            $cookies.putObject('FandmChatCookies', this.username);
+            $uibModalInstance.close();
+          }
+
         };
     }
 
