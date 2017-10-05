@@ -13,7 +13,7 @@
     //  return results;
     };
 
-    Message.sendMessage = function(newMessage) {
+    Message.addMessage = function(newMessage) {
           messages.$add(newMessage); // adds messages from site to firebase
       };
     return Message;
