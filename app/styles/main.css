@@ -38,7 +38,9 @@ html, body, main {
   color: #272727;
 }
 
-
+.message-list {
+  background-color: #f6f6f6;
+}
 .message-username {
   font-weight: normal;
 }
@@ -51,7 +53,7 @@ html, body, main {
 }
 
 .form-control {
-  display: inline;
+  display: inline-block;
   width: 100px;
 }
 
