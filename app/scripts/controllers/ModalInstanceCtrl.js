@@ -10,14 +10,14 @@
 
         this.createUsername = function() {        // saves username user types in
 
-          if (this.username) {
+          if (this.username) {          // if there is a username
             $cookies.putObject('FandmChatCookies', this.username);
             $uibModalInstance.close();
           }
 
         };
 
-        
+
     }
 
   angular

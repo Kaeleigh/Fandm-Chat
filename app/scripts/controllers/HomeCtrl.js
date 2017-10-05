@@ -1,6 +1,5 @@
 (function() {
     function HomeCtrl(Room, Message, $cookies) {
-
       var currentUser = $cookies.get('fandmChatCurrentUser');
 
       this.rooms = Room.all;         // array rooms is attached to HomeCtrl and array of objects retrieved by all method
@@ -10,15 +9,18 @@
         var currentRoom = room;
         this.currentRoomName = currentRoom.$value;
         this.messages = Message.getByRoomId(currentRoom.$id);
+
       }
 
       this.sendMessage = function() {     // sets send method of sending messages to firebase
+          console.log(this);
           Message.addMessage({
-            roomId: this.currentRoom.$id,
-            content: this.newMessage,
-            username: this.currentUser
-          });
-          this.newMessage = "";       // sets newMessage in empty string
+               roomId: this.currentRoom.$id,
+               username: this.currentUser,
+               sentAt: firebase.database.ServerValue.TIMESTAMP
+            });
+
+          this.newMessage = "";
       };
     }
 
